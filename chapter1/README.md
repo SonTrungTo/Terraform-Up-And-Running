@@ -30,3 +30,7 @@ best engineering practices.
     - Ansible is procedural vs Terraform is declarative.
 - Master (Chef, Puppet, SaltStack) vs Masterless(Terraform, Ansible, CloudFormation)
 - Agent vs Agentless
+    - Chef, Puppet, SaltStack is needs to have their agents installed => increasing problems.
+    - Terraform, CloudFormation are not.
+- Large vs Small Community (Terraform slowly catching up)
+- Mature vs Cutting Edge (Terraform youngest, 2014)
