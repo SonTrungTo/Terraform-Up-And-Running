@@ -20,4 +20,13 @@ best engineering practices.
 ## How Terraform works
 - Terraform: high-level code as infrastructure by HashiCorp.
 - Has underlying API with many cloud providers: AWS, Google GCP, Digital Ocean...
+- Make changes on config files, then `terraform apply`.
 ## How Terraform compares to other infras as code tools
+- Configuration vs Management tools.
+- Mutable vs Immutable Infrastructure.
+- Procedural vs Declarative.
+    - `terraform plan` to compare the difference between upcoming
+    and current infra.
+    - Ansible is procedural vs Terraform is declarative.
+- Master (Chef, Puppet, SaltStack) vs Masterless(Terraform, Ansible, CloudFormation)
+- Agent vs Agentless
