@@ -14,3 +14,15 @@
 - First is to make configurations `aws_launch_configuration`
 - `lifecycle` config is needed for ASG.
     - `create_before_destroy(bool)`: create a replacement before destroying the original resource.(must be on dependent resources as well)
+- `aws_elb` resources need `listeners` to route requests
+and listen on ports.
+- To accept incoming requests, all resources need security groups.
+- Terraform searches for variables 
+    - with `TF_VAR_NAME`
+    - Input -var=...
+    - File -var-file=...
+- ELB service has the capability to check health for all instances
+and stops routing to that instance should it become unhealthy.
+
+## Cleanup
+- `terraform destroy` to clean the infras.
