@@ -14,5 +14,10 @@ by multiple developers.
 - 3 Solutions for locking state files,
     - Terraform Pro/Enterprise
     - Build Servers(Jenkins, Circle CI)
-    - Terragrunt
+    - Terragrunt, with DynamoDB as its backend
 ## Isolating state files
+- Better to separate files.
+- Better to use modules in chapter 4 to avoid duplications.
+## Read-only state
+- Use `data "terraform_remote_state" "db_instance" { backend="s3" config{ ... } }`
+- Use `data "template_file" "user_data" { template="${file("user-data.sh")}" vars {...} }` => `.rendered` attribute
