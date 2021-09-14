@@ -4,7 +4,7 @@ to duplicate the codes themselves.
 
 `variables.tf` -----------------> `main.tf`(root module) -----------------> `outputs.tf`
 
-                                  ↙         ↘
+                                  ⤢         ⤡
 
                             `m1`                    `m2` (m === sub-module)
                                
